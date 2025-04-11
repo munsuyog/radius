@@ -8,7 +8,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Radius",
-  description: "AI LMS made by Hemant Batra",
+  description: "AI LMS made by Parv and Divit",
   icons: {
     icon: "/logos/logow.svg",
     apple: "/logos/logow.svg",

@@ -3,7 +3,7 @@ import Stripe from "stripe";
 
 export async function POST(req) {
   const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
-  const returnUrl = "https://hemant-batra.vercel.app/";
+  const returnUrl = "https://radius-gamma.vercel.app";
   const { customerId } = await req.json();
 
   const portalSession = await stripe.billingPortal.sessions.create({
