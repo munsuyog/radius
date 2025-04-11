@@ -32,10 +32,16 @@ function CourseCardItem({ course }) {
         </div>
 
         <div className="mt-3 flex justify-end">
-
+          {course?.status == "Generating" ? (
+            <Button disabled={true} className="flex gap-2 items-center">
+              <h2>Generating</h2>
+              <RefreshCcw className="animate-spin" />
+            </Button>
+          ) : (
             <Link href={"/course/" + course?.courseId}>
               <Button>View </Button>
             </Link>
+          )}
         </div>
       </div>
     </div>
