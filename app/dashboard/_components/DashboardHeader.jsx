@@ -2,6 +2,7 @@ import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import LeaderboardComponent from "./LeaderboardComponent";
 
 function DashboardHeader() {
   return (
@@ -16,6 +17,7 @@ function DashboardHeader() {
         />
       </Link>
       <div className="flex gap-2 md:gap-4 items-center">
+        <LeaderboardComponent />
         <Link
           href={"/create"}
           className="p-1 px-3 block md:hidden rounded-md font-medium border border-primary text-sm md:text-base hover:bg-zinc-800"

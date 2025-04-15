@@ -1,12 +1,12 @@
 "use client";
 import { CourseCountContext } from "@/app/_context/CourseCountContext";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { LayoutDashboard, Shield, UserCircle } from "lucide-react";
+import { Crown, LayoutDashboard, Share2, UserCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useContext } from "react";
+import LeaderboardComponent from "./LeaderboardComponent";
 
 function SideBar() {
   const MenuList = [
@@ -20,6 +20,11 @@ function SideBar() {
       icon: UserCircle,
       path: "/dashboard/profile",
     },
+    {
+      name: "Shared",
+      icon: Share2,
+      path: "/dashboard/shared",
+    }
   ];
 
   const { totalCourse, setTotalCourse } = useContext(CourseCountContext);
@@ -53,6 +58,18 @@ function SideBar() {
         </div>
       </div>
 
+      <div className="mt-6">
+        <div className="p-4 border border-zinc-800 rounded-lg">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2">
+              <Crown className="h-4 w-4 text-yellow-500" />
+              <h3 className="font-medium">Leaderboard</h3>
+            </div>
+            <LeaderboardComponent />
+          </div>
+          <p className="text-sm text-zinc-400">See how your progress compares to other learners!</p>
+        </div>
+      </div>
     </div>
   );
 }
