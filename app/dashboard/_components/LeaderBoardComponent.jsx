@@ -5,7 +5,7 @@ import { useUser } from "@clerk/nextjs";
 import { Crown, Medal, Star, Trophy, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 const RankIcon = ({ rank }) => {
   if (rank === 1) return <Trophy className="h-5 w-5 text-yellow-500" />;
