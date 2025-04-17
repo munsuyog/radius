@@ -2,7 +2,7 @@ import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import LeaderboardComponent from "./LeaderboardComponent";
+import LeaderboardComponent from "./LeaderBoardComponent";
 
 function DashboardHeader() {
   return (

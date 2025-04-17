@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useContext } from "react";
-import LeaderboardComponent from "./LeaderboardComponent";
+import LeaderboardComponent from "./LeaderBoardComponent";
 
 function SideBar() {
   const MenuList = [
