@@ -17,7 +17,7 @@ function CourseCardItem({ course }) {
             height={50}
           />
           <h2 className="text-xs font-semibold p-1 px-2 rounded-lg bg-primary text-secondary">
-            24 Dec 2024
+
           </h2>
         </div>
         <h2 className="mt-3 text-lg font-medium line-clamp-2 leading-relaxed min-h-[3.5rem]">
